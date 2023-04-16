@@ -1,14 +1,14 @@
 import asyncio
 
 from helpers.filters import command
-from config import BOT_NAME as bn, BOT_USERNAME as bu, CHANNEL_UPDATES, SUPPORT_GROUP, OWNER_USERNAME as me, START_IMG
+from config import BOT_NAME as bn, BuOT_USERNAME as bu, CHANNEL_UPDATES, SUPPORT_GROUP, OWNER_USERNAME as me, START_IMG
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAx0CZp7eIAACpv1jYIbWhI9JPBkvLLSLwPxc-8yu2QACDgcAAruXGFbarx8_grqJYh4E")
+    await message.reply_sticker("CAACAgQAAx0CWrNeBQABDw_wZDvP7uUo9klF1fdkbUjQYcYbux8AAvoPAAJJhhhRrBTCwcQVclYvBA")
     await message.reply_photo(
         photo=f"{START_IMG}",
         caption=f""" ** Hey {message.from_user.mention()} , 🥀\n\n
@@ -17,7 +17,7 @@ async def start_(client: Client, message: Message):
 
 ──────────────────
 ๏  All of my command can be used with My command handle : ( / . • $ ^ ~ + * ? )
-➻ Made 🖤 by : [𝗝𝝙𝗬🥀](https://t.me/Finex_xD) ** """,
+➻ Made 🖤 by : [ꜰɪɴᴇx🥀](https://t.me/suppienoodles) ** """,
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -26,24 +26,24 @@ async def start_(client: Client, message: Message):
                        ),
                  ],[
                     InlineKeyboardButton(
-                        "📨 Channel ", url=f"https://t.me/{CHANNEL_UPDATES}"
+                        "📨 ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{TheNight_city}"
                     ),
                     InlineKeyboardButton(
-                        "📨 Support ", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "📨 ᴜᴘᴅᴀᴛᴇꜱ ", url=f"https://t.me/{bothub_xD}"
                     )
                   ],[
                     InlineKeyboardButton(
-                        "👤 Bot Owner ", url=f"https://t.me/{me}"
+                        "👤 Bot Owner ", url=f"https://t.me/SuppieNoodles"
                     ),
                     InlineKeyboardButton(
-                        "👨‍💻 Developer ", url=f"https://t.me/Finex_xD"
+                        "👨‍💻 Developer ", url=f"https://t.me/Suppienoodles"
                     ),
                   ],[
                     InlineKeyboardButton(
                         "✅ Inline ", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "💡 Git repo", url="https://te.legra.ph/file/fcf07ac0577d969e25cdd.mp4"
+                        "💡 Git repo "https://graph.org/file/41b82338ab82bca5643eb.mp4"
 "
                     )]
             ]
